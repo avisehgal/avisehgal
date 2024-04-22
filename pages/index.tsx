@@ -1,27 +1,30 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
+import Image from 'next/image'; 
 
 const Home: NextPage = () => {
   return (
-    <div className="container mx-auto px-4">
-      <header className="text-center py-6">
-        <h1 className="text-4xl font-bold">Avi Sehgal</h1>
-        <nav className="mt-4">
-          <Link href="/about" className="text-lg text-gray-700 hover:text-gray-900 mx-2">About</Link>
-          <Link href="/blog" className="text-lg text-gray-700 hover:text-gray-900 mx-2">Blog</Link>
-          <Link href="/projects" className="text-lg text-gray-700 hover:text-gray-900 mx-2">Projects</Link>
-          <Link href="/photography" className="text-lg text-gray-700 hover:text-gray-900 mx-2">Photography</Link>
-        </nav>
+    <div className="mx-auto px-4 relative"> {/* Added relative positioning */}
+      <header className="relative text-center py-6">
+        {/* Cover Image as background */}
+        <div className="cover relative h-[300px]"> {/* Set a fixed height for the cover */}
+            <Image
+                src="/cover.jpg"
+                alt="Cover Image"
+                layout="fill"
+                className="image"
+                quality={100}
+            />
+            <div className="absolute inset-0 flex items-center justify-center"> {/* Absolute positioning to center text */}
+            <h1 className="text-7xl text-white font-hindmadurai" style={{ WebkitTextStroke: '1px black' }}>Avi Sehgal</h1>
+            </div>
+        </div>
       </header>
       <main>
-        <section className="mt-8">
+        <section className="mt-8 pt-48"> {/* Padding top to push content below the header image */}
           <h2 className="text-2xl font-semibold">Welcome</h2>
           <p className="text-md text-gray-600 mt-2">This is the home of Avi Sehgal. Explore my work and thoughts.</p>
         </section>
       </main>
-      <footer className="text-center py-6">
-        <p className="text-gray-600">© {new Date().getFullYear()} Avi Sehgal</p>
-      </footer>
     </div>
   );
 };

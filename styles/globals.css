@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@40/0;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600&display=swap');
+
+.cover {
+    position: relative;
+    width: 100%;
+    min-height: 30vh; /* Adjust this value to fit the aspect ratio of your image */
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover; /* This will make sure the whole image fits within the container */
+}

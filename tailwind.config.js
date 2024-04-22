@@ -4,7 +4,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}" // If you have a components directory
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'hind-madurai': ['Hind Madurai', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'], 
+      }
+    },
   },
   plugins: [],
 }
