@@ -8,7 +8,7 @@ const Home: NextPage = () => {
         {/* Cover Image as background */}
         <div className="cover relative h-[300px]"> {/* Set a fixed height for the cover */}
             <Image
-                src="/cover.jpg"
+                src="https://i.ibb.co/bHC4LT0/cover.jpg"
                 alt="Cover Image"
                 layout="fill"
                 className="image"
