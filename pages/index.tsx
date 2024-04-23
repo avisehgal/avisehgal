@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
-    <div className="mx-auto px-4 relative"> {/* Added relative positioning */}
+    <div className="mx-auto px-4 relative bg-white dark:bg-black"> {/* Added relative positioning */}
       <header className="relative text-center py-6">
         {/* Cover Image as background */}
-        <div className="cover relative h-[300px]"> {/* Set a fixed height for the cover */}
+        <div className="cover relative h-[300px] "> {/* Set a fixed height for the cover */}
             <Image
                 src="https://i.ibb.co/bHC4LT0/cover.jpg"
                 alt="Cover Image"

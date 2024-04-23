@@ -14,3 +14,15 @@
 .image {
     object-fit: cover; /* This will make sure the whole image fits within the container */
 }
+
+.dark .dark\:bg-gray-600 {
+    background-color: #4B5563;
+  }
+  
+  .dark .dark\:text-gray-200 {
+    color: #E5E7EB;
+  }
+  
+  .dark .dark\:text-gray-400 {
+    color: #9CA3AF;
+  }
