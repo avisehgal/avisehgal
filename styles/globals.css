@@ -16,7 +16,7 @@
 }
 
 .dark .dark\:bg-gray-600 {
-    background-color: #4B5563;
+    background-color: #2e4e7a;
   }
   
   .dark .dark\:text-gray-200 {
@@ -24,5 +24,5 @@
   }
   
   .dark .dark\:text-gray-400 {
-    color: #dae1ec;
+    color: #000000;
   }

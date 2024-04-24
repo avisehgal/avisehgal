@@ -25,7 +25,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     }, [darkMode]);
   
     return (
-      <div className="container mx-auto px-4 bg-white dark:bg-black transition-colors duration-500">
+    <html className="bg-white dark:bg-black transition-colors duration-500">
+      <div className="bg-white dark:bg-black transition-colors duration-500">
         <header className="flex justify-between items-center py-6 font-quicksand">
         <div>
             <Link href="/values" passHref><span className="text-lg text-gray-700 hover:text-gray-900 mx-2 cursor-pointer">About</span></Link>
@@ -34,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Link href="/photography" passHref><span className="text-lg text-gray-700 hover:text-gray-900 mx-2 cursor-pointer">Photography</span></Link>
         </div>
           <button onClick={() => setDarkMode(!darkMode)} className="text-gray-800 dark:text-gray-200 px-3 py-1 rounded">
-            <IconContext.Provider value={{ size: "1.5em" }}>
+            <IconContext.Provider value={{ size: "1.6em" }}>
               {darkMode ? <IoSunny /> : <IoMoon />}
             </IconContext.Provider>
           </button>
@@ -46,6 +47,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <p className="text-gray-600 dark:text-gray-400">© {new Date().getFullYear()} Avi Sehgal</p>
         </footer>
       </div>
+    </html>
     );
   }
 

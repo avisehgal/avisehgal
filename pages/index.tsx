@@ -20,11 +20,11 @@ const Home: NextPage = () => {
         </header>
       <main>
         <section className="mt-8 pt-48"> {/* Padding top to push content below the header image */}
-          <h2 className="text-2xl font-semibold">Welcome</h2>
-          <p className="text-md text-gray-600 mt-2">This is the home of Avi Sehgal. Explore my work and thoughts.</p>
+          <h2 className="text-2xl text-gray-500 font-semibold">Welcome</h2>
+          <p className="text-md text-gray-600 ">This is the home of Avi Sehgal. Explore my work and thoughts.</p>
         </section>
       </main>
-    </div>
+    </div>    
   );
 };
 
