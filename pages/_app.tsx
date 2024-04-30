@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <img
                     src="logo.png.png" 
                     alt="Logo"
-                    className="cursor-pointer"
+                    className={`cursor-pointer ${darkMode ? "invert" : ""}`}
                     width="100" 
                     height="100"
                 />

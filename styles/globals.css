@@ -34,7 +34,7 @@
 }
   
   .dark {
-    --padding-base: 12px; /* increased padding for dark mode */
+    --padding-base: 10px; /* increased padding for dark mode */
     --background-color: #283618; /* background color for dark mode */
     --text-color: #faedcd; /* text color for dark mode */
     --transition: 'all 0.5s ease';
