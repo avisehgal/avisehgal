@@ -25,29 +25,48 @@ function MyApp({ Component, pageProps }: AppProps) {
     }, [darkMode]);
   
     return (
-    <html className="bg-white dark:bg-black transition-colors duration-500">
-      <div className="bg-white dark:bg-black transition-colors duration-500">
-        <header className="flex justify-between items-center py-6 font-quicksand">
-        <div>
-            <Link href="/values" passHref><span className="text-lg text-gray-700 hover:text-gray-900 mx-2 cursor-pointer">About</span></Link>
-            <Link href="/blog" passHref><span className="text-lg text-gray-700 hover:text-gray-900 mx-2 cursor-pointer">Blog</span></Link>
-            <Link href="/projects" passHref><span className="text-lg text-gray-700 hover:text-gray-900 mx-2 cursor-pointer">Projects</span></Link>
-            <Link href="/photography" passHref><span className="text-lg text-gray-700 hover:text-gray-900 mx-2 cursor-pointer">Photography</span></Link>
+        <div className="" style={{
+            padding: `var(--padding-base)`,
+            backgroundColor: `var(--background-color)`,
+            color: `var(--text-color)`,
+            transition: 'all 0.5s ease'
+        }}>
+            <header className="mx-auto max-w-5xl flex justify-between items-center py-6 font-quicksand">
+                {/* Left side of the nav - Logo */}
+                <Link href="/" passHref>
+                <img
+                    src="logo.png.png" 
+                    alt="Logo"
+                    className="cursor-pointer"
+                    width="100" 
+                    height="100"
+                />
+                </Link>
+                {/* Right side of the nav - Pages and Dark mode toggle */}
+                <div className="flex items-center">
+                {/* Pages */}
+                <nav>
+                    <Link href="/values" passHref><span className="text-lg hover:text-gray-900 mx-2 cursor-pointer">About</span></Link>
+                    <Link href="/blog" passHref><span className="text-lg hover:text-gray-900 mx-2 cursor-pointer">Blog</span></Link>
+                    <Link href="/projects" passHref><span className="text-lg  hover:text-gray-900 mx-2 cursor-pointer">Projects</span></Link>
+                    <Link href="/photography" passHref><span className="text-lg  hover:text-gray-900 mx-2 cursor-pointer">Photography</span></Link>
+                </nav>
+                {/* Dark mode toggle button */}
+                <button onClick={() => setDarkMode(!darkMode)} className="text-gray-800 dark:text-gray-200 px-3 py-1 rounded ml-4">
+                    <IconContext.Provider value={{ size: "1.6em" }}>
+                    {darkMode ? <IoSunny /> : <IoMoon />}
+                    </IconContext.Provider>
+                </button>
+                </div>
+            </header>
+            <main className="mx-auto max-w-5xl">
+                <Component {...pageProps} />
+            </main>
+            <footer className="text-center py-6  transition-colors duration-500">
+                <p className="text-gray-600 dark:text-gray-400">© {new Date().getFullYear()} Avi Sehgal</p>
+            </footer>
         </div>
-          <button onClick={() => setDarkMode(!darkMode)} className="text-gray-800 dark:text-gray-200 px-3 py-1 rounded">
-            <IconContext.Provider value={{ size: "1.6em" }}>
-              {darkMode ? <IoSunny /> : <IoMoon />}
-            </IconContext.Provider>
-          </button>
-        </header>
-        <main className="bg-white dark:bg-black transition-colors duration-500">
-          <Component {...pageProps} />
-        </main>
-        <footer className="text-center py-6 bg-white dark:bg-black transition-colors duration-500">
-          <p className="text-gray-600 dark:text-gray-400">© {new Date().getFullYear()} Avi Sehgal</p>
-        </footer>
-      </div>
-    </html>
+     
     );
   }
 

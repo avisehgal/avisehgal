@@ -26,3 +26,16 @@
   .dark .dark\:text-gray-400 {
     color: #000000;
   }
+  :root {
+    --padding-base: 8px; /* default padding for light mode */
+    --background-color: #ccd5ae; /* default background color for light mode */
+    --text-color: #333; /* default text color for light mode */
+    --transition: 'all 0.5s ease';
+}
+  
+  .dark {
+    --padding-base: 12px; /* increased padding for dark mode */
+    --background-color: #283618; /* background color for dark mode */
+    --text-color: #faedcd; /* text color for dark mode */
+    --transition: 'all 0.5s ease';
+  }

@@ -3,28 +3,28 @@ import Image from 'next/image';
 
 const Home: NextPage = () => {
     return (
-      <div className="mx-auto px-4 relative bg-white dark:bg-black transition-colors duration-500">
-        <header className="relative text-center py-6">
-          <div className="cover relative h-[300px] bg-white dark:bg-black transition-colors duration-500">
-            <Image
+        <div className="relative bg-`var(--background-color)` transition-colors duration-500">
+        <header className=" text-center py-6">
+          <div >
+            {/* <Image
               src="https://i.ibb.co/bHC4LT0/cover.jpg"
               alt="Cover Image"
               layout="fill"
               className="image"
               quality={100}
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-7xl text-white font-hind-madurai dark:text-stroke">Avi Sehgal</h1>
+            /> */}
+            <div className="flex items-center justify-center">
+              <h1 className="text-3xl font-hind-madurai dark:text-stroke">Hello, I'm Avi 👨🏽‍💻</h1>
             </div>
           </div>
         </header>
-      <main>
-        <section className="mt-8 pt-48"> {/* Padding top to push content below the header image */}
-          <h2 className="text-2xl text-gray-500 font-semibold">Welcome</h2>
-          <p className="text-md text-gray-600 ">This is the home of Avi Sehgal. Explore my work and thoughts.</p>
-        </section>
-      </main>
-    </div>    
+        <main >
+          <section> {/* Keep padding top to push content below the header image */}
+            <p className="text-xl">A software developer, hobbyist photographer and home cook. I love writing code with python, designing elastic backends and drinking coffee. Explore my work and thoughts.</p>
+          </section>
+        </main>
+      </div>
+          
   );
 };
 
