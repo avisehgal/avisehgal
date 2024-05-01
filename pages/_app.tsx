@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
 import Link from 'next/link';
+import Head from 'next/head';
 import { IoMoon } from "react-icons/io5";
 import { IoSunny } from "react-icons/io5";
 import { IconContext } from "react-icons";
@@ -30,12 +31,17 @@ function MyApp({ Component, pageProps }: AppProps) {
             backgroundColor: `var(--background-color)`,
             color: `var(--text-color)`,
             transition: 'all 0.5s ease'
-        }}>
+        }}> <Head>
+                <title>Avi Sehgal</title>
+                <link rel="icon" href="/favicon1.ico" type="image/x-icon"/>
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+                <meta name="theme-color" content="#317EFB"/> 
+            </Head>
             <header className="mx-auto max-w-5xl flex justify-between items-center py-6 font-quicksand">
                 {/* Left side of the nav - Logo */}
                 <Link href="/" passHref>
                 <img
-                    src="logo.png.png" 
+                    src="https://i.ibb.co/FJ0Q2hw/logo-png.png" 
                     alt="Logo"
                     className={`cursor-pointer ${darkMode ? "invert" : ""}`}
                     width="100" 
