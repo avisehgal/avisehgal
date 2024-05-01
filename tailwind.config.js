@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         'hind-madurai': ['Hind Madurai', 'sans-serif'],
         quicksand: ['Quicksand', 'sans-serif'], 
+      },
+      transitionProperty: {
+        'max-height': 'max-height'
       }
     },
   },
