@@ -52,10 +52,10 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <div className="flex items-center">
                 {/* Pages */}
                 <nav>
-                    <Link href="/values" passHref><span className="text-lg hover:text-gray-900 mx-2 cursor-pointer">Values</span></Link>
-                    <Link href="/blog" passHref><span className="text-lg hover:text-gray-900 mx-2 cursor-pointer">Blog</span></Link>
-                    <Link href="/projects" passHref><span className="text-lg  hover:text-gray-900 mx-2 cursor-pointer">Projects</span></Link>
-                    <Link href="/photography" passHref><span className="text-lg  hover:text-gray-900 mx-2 cursor-pointer">Photography</span></Link>
+                    <Link href="/values" passHref><span className="text-lg hover:text-gray-900 mx-2 cursor-pointer">values</span></Link>
+                    <Link href="/blog" passHref><span className="text-lg hover:text-gray-900 mx-2 cursor-pointer">blog</span></Link>
+                    <Link href="/projects" passHref><span className="text-lg  hover:text-gray-900 mx-2 cursor-pointer">projects</span></Link>
+                    <Link href="/photography" passHref><span className="text-lg  hover:text-gray-900 mx-2 cursor-pointer">photography</span></Link>
                 </nav>
                 {/* Dark mode toggle button */}
                 <button onClick={() => setDarkMode(!darkMode)} className="text-gray-800 dark:text-gray-200 px-3 py-1 rounded ml-4">
