@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 </button>
                 </div>
             </header>
-            <main className="mx-auto max-w-5xl">
+            <main className="mx-auto max-w-5xl min-h-screen">
                 <Component {...pageProps} />
             </main>
             <footer className="text-center py-6  transition-colors duration-500">
