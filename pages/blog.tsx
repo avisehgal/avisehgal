@@ -38,9 +38,11 @@ const BlogsPage: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Blog</title>
+        <title>blog</title>
       </Head>
-      <div className="flex flex-col items-center justify-center min-h-screen p-4">
+      <br></br>
+      <br></br>
+      <div className="flex flex-col items-center min-h-screen p-4">
         {blogPosts.map((post, index) => (
           <Blog key={index} {...post} />
         ))}
