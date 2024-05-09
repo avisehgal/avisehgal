@@ -18,7 +18,7 @@ import { SiJenkins , SiDassaultsystemes , SiGnubash , SiPowershell , SiKubernete
 import { VscAzure } from "react-icons/vsc";
 import { TbFileTypeSql } from "react-icons/tb";
 import { FaDocker , FaGitSquare } from "react-icons/fa";
-import { FaFigma , FaAws } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaFigma , FaAws } from "react-icons/fa6";
 
 const TechIcons = () => {
   const icons = [
@@ -65,6 +65,14 @@ const Home: NextPage = () => {
             <p className="text-xl">
               A software developer, hobbyist photographer and home cook. I love writing code with python, designing elastic backends and drinking coffee. Explore my work and thoughts. Fun fact: I've been working the remote dev life for 6+ years!
             </p>
+            <div className="mt-4 flex">
+                <a href="https://github.com/avisehgal" target="_blank" rel="noopener noreferrer" className="button-social mr-4">
+                  <FaGithub className="mr-2" /> View GitHub
+                </a>
+                <a href="https://linkedin.com/in/avi-sehgal" target="_blank" rel="noopener noreferrer" className="button-social">
+                  <FaLinkedinIn className="mr-2" /> View LinkedIn
+                </a>
+              </div>
           </div>
           <div className="w-48 h-48 md:w-64 md:h-48 relative">
             <Image
