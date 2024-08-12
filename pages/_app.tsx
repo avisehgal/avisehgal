@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             transition: 'all 0.5s ease'
         }}> <Head>
                 <title>Avi Sehgal</title>
-                <link rel="icon" href="/favicon1.ico" type="image/x-icon"/>
+                <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
                 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
                 <meta name="theme-color" content="#317EFB"/> 
             </Head>
