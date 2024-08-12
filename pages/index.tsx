@@ -76,7 +76,7 @@ const Home: NextPage = () => {
           </div>
           <div className="w-48 h-48 md:w-64 md:h-48 relative">
             <Image
-              src="https://ibb.co/Jcg6S6W"
+              src="https://i.ibb.co/sgzxXxp/avi.jpg"
               alt="Avi Sehgal"
               width={300}
               height={400}
